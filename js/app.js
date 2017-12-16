@@ -114,11 +114,20 @@ const calculator = {
 // Iterators
 // forEach
 
-const words = ["Ho", "Chi", "Minh", "City", "was", "once", "known", "as", "Prey", "Nokor"];
+// const words = ["Ho", "Chi", "Minh", "City", "was", "once", "known", "as", "Prey", "Nokor"];
 
-words.forEach((item) => {
-	console.log(item)
+// words.forEach((item) => {
+// 	console.log(item)
+// })
+
+
+// Map
+const more_words = ["Joe", "Overeats", "Eggs"];
+
+let newArray = more_words.map((str) => {
+	return str[0]
 })
+
 
 
 
