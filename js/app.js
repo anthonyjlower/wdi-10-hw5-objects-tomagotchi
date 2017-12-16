@@ -26,3 +26,28 @@ const myInformation = {
 		newName = prompt("Please reenter your name");
 	}
 }
+
+
+//Greeter
+const greeter = {
+	hello(nameInput) {
+		return "Oh hello there, " + nameInput;
+	},
+	goodbye(nameInput){
+		return "Adios, " + nameInput;
+	},
+	whoAreYou(nameInput){
+		return "Oh right! " + nameInput + " how could I forget..."
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
