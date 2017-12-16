@@ -114,19 +114,19 @@ const calculator = {
 // Iterators
 // forEach
 
-// const words = ["Ho", "Chi", "Minh", "City", "was", "once", "known", "as", "Prey", "Nokor"];
+const words = ["Ho", "Chi", "Minh", "City", "was", "once", "known", "as", "Prey", "Nokor"];
 
-// words.forEach((item) => {
-// 	console.log(item)
-// })
+words.forEach((item) => {
+	console.log(item)
+})
 
 
 // Map
-// const more_words = ["Joe", "Overeats", "Eggs"];
+const more_words = ["Joe", "Overeats", "Eggs"];
 
-// let newArray = more_words.map((str) => {
-// 	return str[0]
-// })
+let newArray = more_words.map((str) => {
+	return str[0]
+})
 
 
 // reduce
@@ -135,8 +135,40 @@ const arr = [8, 8, 8, 8, 8, 8, 8, 8];
 
 let product = arr.reduce((a,b) => {
 	return a*b
-})
+})	
 
+
+// Chaining
+const sheepShearers = [
+    {
+        name: "Tim",
+        age: 20,
+        sheepCount: 18
+    },
+    {
+        name: "C3PO",
+        age: 200,
+        sheepCount: 320
+    },
+    {
+        name: "Cousin It",
+        age: Infinity,
+        sheepCount: 2900
+    }
+];
+	
+
+
+const totalSheered = sheepShearers.map((person) =>{
+	//Create an array out of the objects in sheepShearers
+	return	person
+}).map((count) =>{
+	//Create an array containing only the sheep count value 
+	return count.sheepCount
+}).reduce((a,b) =>{
+	// add all of the sheep counts together
+	return a+b
+})
 
 
 
