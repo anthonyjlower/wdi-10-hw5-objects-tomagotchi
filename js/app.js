@@ -90,6 +90,27 @@ const leonardo = {
 }
 
 
+// Calculator
+const calculator = {
+	output: 0,
+	multiply(num1, num2){
+		this.output = num1 * num2
+		console.log(this.output)
+	},
+	divide(numerator, denominator){
+		this.output = numerator /denominator
+		console.log(this.output)
+	},
+	sum(num1, num2){
+		this.output = num2 + num1
+		console.log(this.output)
+	},
+	subtract(numStart, numLess) {
+		this.output = numStart - numLess
+		console.log(this.output)
+	}
+}
+
 
 
 
