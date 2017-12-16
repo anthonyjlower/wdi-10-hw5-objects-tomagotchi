@@ -111,7 +111,14 @@ const calculator = {
 	}
 }
 
+// Iterators
+// forEach
 
+const words = ["Ho", "Chi", "Minh", "City", "was", "once", "known", "as", "Prey", "Nokor"];
+
+words.forEach((item) => {
+	console.log(item)
+})
 
 
 
