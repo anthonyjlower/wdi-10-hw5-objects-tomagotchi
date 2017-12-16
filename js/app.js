@@ -56,7 +56,19 @@ const stringCollector = {
 	}
 }
 
-
+const atm = {
+	totalCash: 200,
+	dispenseTwenties(numOfTwenties) {
+		let withdrawlTotal = numOfTwenties * 20;
+		if (this.totalCash >= withdrawlTotal) {
+			this.totalCash = this.totalCash - withdrawlTotal;
+			return withdrawlTotal;
+		}
+		else{
+			return null
+		}
+	}
+}
 
 
 
