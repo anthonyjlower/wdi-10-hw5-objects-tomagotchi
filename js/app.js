@@ -42,6 +42,21 @@ const greeter = {
 }
 
 
+// Collecting Strings
+const stringCollector = {
+	collection: [],
+	collect(strInput) {
+		let reverseStr = strInput.split("").reverse().join('');
+		this.collection.push(reverseStr)
+	},
+	admireCollection(){
+		this.collection.forEach((str) => {
+			console.log(str)
+		})
+	}
+}
+
+
 
 
 
