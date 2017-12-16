@@ -122,10 +122,19 @@ const calculator = {
 
 
 // Map
-const more_words = ["Joe", "Overeats", "Eggs"];
+// const more_words = ["Joe", "Overeats", "Eggs"];
 
-let newArray = more_words.map((str) => {
-	return str[0]
+// let newArray = more_words.map((str) => {
+// 	return str[0]
+// })
+
+
+// reduce
+
+const arr = [8, 8, 8, 8, 8, 8, 8, 8];
+
+let product = arr.reduce((a,b) => {
+	return a*b
 })
 
 
