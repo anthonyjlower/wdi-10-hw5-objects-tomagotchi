@@ -56,6 +56,8 @@ const stringCollector = {
 	}
 }
 
+
+//ATM
 const atm = {
 	totalCash: 200,
 	dispenseTwenties(numOfTwenties) {
@@ -70,7 +72,22 @@ const atm = {
 	}
 }
 
-
+// Hungry Turtles
+const leonardo = {
+	name: "leonardo",
+	color: 'Blue',
+	weapon: "Katana",
+	pizzaEaten: false,
+	eatPizza() {
+		if (this.pizzaEaten === true) {
+			console.log(this.name + " has already eaten pizza.");
+			this.pizzaEaten = false;
+		} else{
+			console.log(this.name + " is eating pizza.");
+			this.pizzaEaten = true
+		}
+	}
+}
 
 
 
