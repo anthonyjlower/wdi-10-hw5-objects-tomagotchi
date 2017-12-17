@@ -8,12 +8,14 @@ var tamagotchi1 = {
   restedness: 100,
   health: 100,
   cry() {
-  	console.log("Whaaaaa!")
+  	console.log(this.name + ": Whaaaaa!");
+  	this.foodInTummy -= 25;
+  	console.log(this.name + " has " + this.foodInTummy + " much food in their tummy.")
   },
   puke() {
-  	console.log(':O ~~~~')
+  	console.log(this.name + ': ":O ~~~~"');
   },
   yawn() {
-  	console.log("Yaaaawwwnnn!")
+  	console.log(this.name + ": Yaaaawwwnnn!");
   }
 }
