@@ -11,6 +11,9 @@ var tamagotchi1 = {
   	console.log("Whaaaaa!")
   },
   puke() {
-  	console.log(':O ~~~~ ')
+  	console.log(':O ~~~~')
+  },
+  yawn() {
+  	console.log("Yaaaawwwnnn!")
   }
 }
