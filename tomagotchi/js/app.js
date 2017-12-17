@@ -9,5 +9,8 @@ var tamagotchi1 = {
   health: 100,
   cry() {
   	console.log("Whaaaaa!")
+  },
+  puke() {
+  	console.log(':O ~~~~ ')
   }
 }
