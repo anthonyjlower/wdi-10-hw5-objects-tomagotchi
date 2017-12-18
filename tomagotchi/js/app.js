@@ -59,6 +59,10 @@ const player1 = {
 		feedFirst.foodInTummy ++; feedSecond.foodInTummy ++;
 		console.log(this.name + " fed " + feedFirst.name + " & " + feedSecond.name);
 
+	},
+	medicateTamagotchi(whoToHeel) {
+		whoToHeel.health++;
+		console.log(this.name + " healed " + whoToHeel.name)
 	}
 }
 
