@@ -69,14 +69,14 @@ const player1 = {
 	sayName() {
 		console.log("Hello, my name is " + this.name);
 	},
-	feedTamagotchi(feedFirst, feedSecond) {
-		feedFirst.foodInTummy ++; feedSecond.foodInTummy ++;
-		console.log(this.name + " fed " + feedFirst.name + " & " + feedSecond.name);
+	feedTamagotchi(typeOfFood) {
+		tamagotchi1.foodInTummy ++; tamagotchi2.foodInTummy ++;
+		console.log(this.name + " fed " + typeOfFood + " to " + tamagotchi1.name + " & " + tamagotchi2.name);
 
 	},
-	medicateTamagotchi(whoToHeel) {
-		whoToHeel.health++;
-		console.log(this.name + " healed " + whoToHeel.name)
+	medicateTamagotchi(typeOfMedicine) {
+		tamagotchi1.health++; tamagotchi2.health++;
+		console.log(this.name + " healed " + tamagotchi1.name + " & " + tamagotchi2.name + " with " + typeOfMedicine)
 	},
 	knockOutTamagotchi(whoToKnockout) {
 		whoToKnockout.restedness++;
