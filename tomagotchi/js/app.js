@@ -71,13 +71,21 @@ const player1 = {
 }
 
 
-
-
-
-
-
-
-
+const hungerTimer = (whoToActivate) => {
+	const hungertimer = setInterval(() =>{
+		whoToActivate.cry()
+	}, 6000
+)};
+const yawnTimer = (whoToActivate) => {
+	const gameTimer = setInterval(() =>{
+		whoToActivate.yawn()
+	}, 10000
+)};
+const sickTimer = (whoToActivate) => {
+	const gameTimer = setInterval(() =>{
+		whoToActivate.puke()
+	}, 25000
+)};
 
 
 
