@@ -21,6 +21,20 @@ var tamagotchi1 = {
   	console.log(this.name + ": Yaaaawwwnnn!");
   	this.restedness --;
   	console.log(this.name + " has " + this.restedness + " energy remaining." );
+  },
+  start() {
+  	const hungertimer = setInterval(() =>{
+		this.cry()
+	}, 6000
+	)
+  	const sleepTimer = setInterval(() =>{
+		this.yawn()
+	}, 10000
+	)
+  	const sickTimer = setInterval(() =>{
+		this.puke()
+	}, 25000
+	)
   }
 }
 
@@ -71,21 +85,27 @@ const player1 = {
 }
 
 
-const hungerTimer = (whoToActivate) => {
-	const hungertimer = setInterval(() =>{
-		whoToActivate.cry()
-	}, 6000
-)};
-const yawnTimer = (whoToActivate) => {
-	const gameTimer = setInterval(() =>{
-		whoToActivate.yawn()
-	}, 10000
-)};
-const sickTimer = (whoToActivate) => {
-	const gameTimer = setInterval(() =>{
-		whoToActivate.puke()
-	}, 25000
-)};
+
+/************ GLOBAL SCOPE TIMERS ******************/
+
+// const hungerTimer = (whoToActivate) => {
+// 	const hungertimer = setInterval(() =>{
+// 		whoToActivate.cry()
+// 	}, 6000
+// 	)
+// };
+// const yawnTimer = (whoToActivate) => {
+// 	const gameTimer = setInterval(() =>{
+// 		whoToActivate.yawn()
+// 	}, 10000
+// 	)
+// };
+// const sickTimer = (whoToActivate) => {
+// 	const gameTimer = setInterval(() =>{
+// 		whoToActivate.puke()
+// 	}, 25000
+// 	)
+// };
 
 
 
