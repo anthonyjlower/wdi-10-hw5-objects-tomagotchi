@@ -9,7 +9,7 @@ var tamagotchi1 = {
   health: 100,
   cry() {
   	console.log(this.name + ": Whaaaaa!");
-  	this.foodInTummy -= 25;
+  	this.foodInTummy -= 10;
   	console.log(this.name + " has " + this.foodInTummy + " much food in their tummy.")
   },
   puke() {
@@ -23,7 +23,7 @@ var tamagotchi1 = {
   	console.log(this.name + " has " + this.restedness + " energy remaining." );
   },
   start() {
-  	const hungertimer = setInterval(() =>{
+  	const hungerTimer = setInterval(() =>{
 		this.cry()
 	}, 6000
 	)
@@ -35,7 +35,11 @@ var tamagotchi1 = {
 		this.puke()
 	}, 25000
 	)
-  }
+  },
+  // I can't get this clear interval to work. In the lab I was putthing the clearInterval() inside the start() method and I think I am having a scope issue where the variable isn't defined in the new stop() method I am writing.
+  // stop(){
+  // 	clearInterval(hungerTimer); clearInterval(sleepTimer); clearInterval(sickTimer);
+  // }
 }
 
 
@@ -47,7 +51,7 @@ var tamagotchi2 = {
   health: 65,
   cry() {
   	console.log(this.name + ": Whaaaaa!");
-  	this.foodInTummy -= 25;
+  	this.foodInTummy -= 10;
   	console.log(this.name + " has " + this.foodInTummy + " much food in their tummy.")
   },
   puke() {
@@ -59,6 +63,20 @@ var tamagotchi2 = {
   	console.log(this.name + ": Yaaaawwwnnn!");
   	this.restedness --;
   	console.log(this.name + " has " + this.restedness + " energy remaining." );
+  },
+  start() {
+  	const hungerTimer = setInterval(() =>{
+		this.cry()
+	}, 6000
+	)
+  	const sleepTimer = setInterval(() =>{
+		this.yawn()
+	}, 10000
+	)
+  	const sickTimer = setInterval(() =>{
+		this.puke()
+	}, 25000
+	)
   }
 }
 
@@ -78,9 +96,9 @@ const player1 = {
 		tamagotchi1.health++; tamagotchi2.health++;
 		console.log(this.name + " healed " + tamagotchi1.name + " & " + tamagotchi2.name + " with " + typeOfMedicine)
 	},
-	knockOutTamagotchi(whoToKnockout) {
-		whoToKnockout.restedness++;
-		console.log(this.name + " has put " + whoToKnockout.name + " to sleep.")
+	knockOutTamagotchi() {
+		tamagotchi1.restedness++;
+		console.log(this.name + " has put " + tamagotchi1.name + " to sleep.")
 	}
 }
 
