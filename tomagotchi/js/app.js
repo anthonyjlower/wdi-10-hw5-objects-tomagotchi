@@ -63,6 +63,10 @@ const player1 = {
 	medicateTamagotchi(whoToHeel) {
 		whoToHeel.health++;
 		console.log(this.name + " healed " + whoToHeel.name)
+	},
+	knockOutTamagotchi(whoToKnockout) {
+		whoToKnockout.restedness++;
+		console.log(this.name + " has put " + whoToKnockout.name + " to sleep.")
 	}
 }
 
