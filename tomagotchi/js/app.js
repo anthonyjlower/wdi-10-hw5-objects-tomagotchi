@@ -54,6 +54,11 @@ const player1 = {
 	name: "Anthony",
 	sayName() {
 		console.log("Hello, my name is " + this.name);
+	},
+	feedTamagotchi(feedFirst, feedSecond) {
+		feedFirst.foodInTummy ++; feedSecond.foodInTummy ++;
+		console.log(this.name + " fed " + feedFirst.name + " & " + feedSecond.name);
+
 	}
 }
 
