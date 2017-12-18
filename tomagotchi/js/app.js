@@ -47,3 +47,33 @@ var tamagotchi2 = {
   	console.log(this.name + " has " + this.restedness + " energy remaining." );
   }
 }
+
+
+
+const player1 = {
+	name: "Anthony",
+	sayName() {
+		console.log("Hello, my name is " + this.name);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
