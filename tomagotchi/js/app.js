@@ -14,9 +14,13 @@ var tamagotchi1 = {
   },
   puke() {
   	console.log(this.name + ': ":O ~~~~"');
+  	this.health --;
+  	console.log(this.name + " has " + this.health + " health remaining.");
   },
   yawn() {
   	console.log(this.name + ": Yaaaawwwnnn!");
+  	this.restedness --;
+  	console.log(this.name + " has " + this.restedness + " energy remaining." );
   }
 }
 
@@ -34,8 +38,12 @@ var tamagotchi2 = {
   },
   puke() {
   	console.log(this.name + ': ":O ~~~~"');
+  	this.health --;
+  	console.log(this.name + has + this.health + " health remaining");
   },
   yawn() {
   	console.log(this.name + ": Yaaaawwwnnn!");
+  	this.restedness --;
+  	console.log(this.name + " has " + this.restedness + " energy remaining." );
   }
 }
